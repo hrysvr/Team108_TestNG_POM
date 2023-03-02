@@ -10,7 +10,6 @@ import utilities.TestBaseRapor;
 
  public class C03_RaporluPozitifLoginTesti extends TestBaseRapor {
 
-
     @Test
     public void pozitifLoginTesti(){
         extentTest = extentReports.createTest("Pozitif login testi","gecerli bilgilerle giris yapilabilmeli");
