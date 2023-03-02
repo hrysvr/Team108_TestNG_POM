@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Istenen package'leri calistirma">
+    <test name="day11 Test">
+        <packages>
+            
+            <package name="tests.day11_POM_Assertions"></package>
+
+        </packages>
+    </test>
+</suite>

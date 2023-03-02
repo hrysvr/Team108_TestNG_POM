@@ -22,7 +22,7 @@ public class C03_NegatifLoginTesti {
 
     QdPage qdPage= new QdPage();
 
-    @Test
+    @Test(groups = "smoke")
     public void negatifLogin1(){
 
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
@@ -36,7 +36,7 @@ public class C03_NegatifLoginTesti {
     }
 
 
-    @Test
+    @Test(groups = {"smoke","mr1"})
     public void negatifLogin2(){
         qdPage= new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
