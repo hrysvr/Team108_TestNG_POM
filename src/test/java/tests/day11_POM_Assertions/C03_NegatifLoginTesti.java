@@ -6,6 +6,7 @@ import pages.AmazonPage;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import java.awt.dnd.DragGestureEvent;
 
@@ -29,6 +30,8 @@ public class C03_NegatifLoginTesti {
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
+        qdPage.cookiesKabulButonu.click();
+        ReusableMethods.bekle(3);
         qdPage.loginButonu.click();
 
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());
@@ -43,6 +46,8 @@ public class C03_NegatifLoginTesti {
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
+        qdPage.cookiesKabulButonu.click();
+        ReusableMethods.bekle(3);
         qdPage.loginButonu.click();
 
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());
@@ -56,6 +61,8 @@ public class C03_NegatifLoginTesti {
         qdPage.ilkLoginLinki.click();
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
+        qdPage.cookiesKabulButonu.click();
+        ReusableMethods.bekle(3);
         qdPage.loginButonu.click();
 
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());

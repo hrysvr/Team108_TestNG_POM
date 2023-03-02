@@ -1,10 +1,12 @@
 package tests.day11_POM_Assertions;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C02_PozitifLoginTesti {
 
@@ -22,6 +24,8 @@ public class C02_PozitifLoginTesti {
         // gecerli kullanici adi ve password ile giris yapin
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
+        qdPage.cookiesKabulButonu.click();
+        ReusableMethods.bekle(3);
         qdPage.loginButonu.click();
 
         // basarili bir sekilde giris yapildigini test edin

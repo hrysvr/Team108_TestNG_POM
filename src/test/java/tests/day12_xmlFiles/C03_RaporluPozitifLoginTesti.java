@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
  public class C03_RaporluPozitifLoginTesti extends TestBaseRapor {
@@ -27,6 +28,8 @@ import utilities.TestBaseRapor;
         extentTest.info("Gecerli e-mail yazildi");
         qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
         extentTest.info("Gecerli password yazildi");
+        qdPage.cookiesKabulButonu.click();
+        ReusableMethods.bekle(3);
         qdPage.loginButonu.click();
         extentTest.info("Login butonuna basildi");
 
