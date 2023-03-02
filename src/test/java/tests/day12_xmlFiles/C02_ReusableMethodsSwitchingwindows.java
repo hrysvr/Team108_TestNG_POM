@@ -31,7 +31,6 @@ public class C02_ReusableMethodsSwitchingwindows {
 
 
 
-
         Driver.closeDriver();
 
     }

@@ -9,7 +9,7 @@ import utilities.Driver;
 
 public class C01_configReaderKullanimi {
 
-    @Test (groups = "smoke")
+    @Test
     public void test01(){
 
         // amazon anasayfaya gidelim

@@ -1,6 +1,5 @@
 package tests.day11_POM_Assertions;
 
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QdPage;
@@ -10,9 +9,8 @@ import utilities.ReusableMethods;
 
 public class C02_PozitifLoginTesti {
 
-    // Bu testi calistirdigimda cookies'den dolayi failed veriyor
 
-    @Test
+    @Test(groups = "smoke")
     public void pozitifLoginTesti(){
         // qd anasayfaya gidin
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
