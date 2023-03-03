@@ -63,7 +63,9 @@ public class C06_SoftAssert {
         List<WebElement> optionsElementListesi = select.getOptions();
         List<String> actualOptionsStringList = ReusableMethods.stringListeCevir(optionsElementListesi);
 
-        String[] expectedArr = { "Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)","China (yuan)","Denmark (krone)","Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)","Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand (dollar)","Sweden (krona)","Singapore (dollar)","Thailand (baht)"};
+        String[] expectedArr = { "Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)","China (yuan)",
+                "Denmark (krone)","Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)","Japan (yen)","Mexico (peso)",
+                "Norway (krone)","New Zealand (dollar)","Sweden (krona)","Singapore (dollar)","Thailand (baht)"};
         List<String> expectedOptionListesi = new ArrayList<>();
 
         for (String each : expectedArr
