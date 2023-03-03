@@ -64,5 +64,6 @@ public class Q03 {
         System.out.println(kontrolList + "\n" +fiyatlarDouble);
         softAssert.assertEquals(fiyatlarDouble,kontrolList,"Siralama gerceklesmemistir");
         softAssert.assertAll();
+        Driver.closeDriver();
     }
 }
