@@ -3,7 +3,7 @@ package tests.day11_POM_Assertions;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AmazonPage;
+import pages.AhmetHocaPage.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 

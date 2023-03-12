@@ -5,8 +5,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.Driver;
-import utilities.DriverCross;
 import utilities.TestBaseCross;
 
 public class C02_AmazonTestiCross extends TestBaseCross {
@@ -30,7 +28,4 @@ public class C02_AmazonTestiCross extends TestBaseCross {
         Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
 
     }
-
-
-
 }

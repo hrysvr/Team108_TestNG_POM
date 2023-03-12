@@ -1,4 +1,4 @@
-package tests.practice;
+package tests.AyseHocaPractice;
 
 import org.testng.annotations.Test;
 

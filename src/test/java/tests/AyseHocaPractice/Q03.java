@@ -1,4 +1,4 @@
-package tests.practice;
+package tests.AyseHocaPractice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

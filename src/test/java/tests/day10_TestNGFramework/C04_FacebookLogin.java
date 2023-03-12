@@ -3,7 +3,7 @@ package tests.day10_TestNGFramework;
 import com.github.javafaker.Faker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.FacebookPage;
+import pages.AhmetHocaPage.FacebookPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
